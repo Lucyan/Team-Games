@@ -18,6 +18,16 @@
 		A72137DC16A2967400E5C69A /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A72137DB16A2967400E5C69A /* Default@2x.png */; };
 		A72137DE16A2967400E5C69A /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A72137DD16A2967400E5C69A /* Default-568h@2x.png */; };
 		A72137E116A2967400E5C69A /* Team_Games.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A72137DF16A2967400E5C69A /* Team_Games.xcdatamodeld */; };
+		A72137E816A296A100E5C69A /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A72137E716A296A100E5C69A /* MainStoryboard.storyboard */; };
+		A72137EC16A296D000E5C69A /* Personas.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137EB16A296D000E5C69A /* Personas.m */; };
+		A72137EF16A296E900E5C69A /* PreguntasClass.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137EE16A296E900E5C69A /* PreguntasClass.m */; };
+		A72137F916A2970E00E5C69A /* DatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F216A2970E00E5C69A /* DatosViewController.m */; };
+		A72137FA16A2970E00E5C69A /* GeneroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F416A2970E00E5C69A /* GeneroViewController.m */; };
+		A72137FB16A2970E00E5C69A /* HorarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F616A2970E00E5C69A /* HorarioViewController.m */; };
+		A72137FC16A2970E00E5C69A /* JuegoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F816A2970E00E5C69A /* JuegoViewController.m */; };
+		A72137FE16A2971900E5C69A /* naipe.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A72137FD16A2971900E5C69A /* naipe.jpg */; };
+		A721380016A2AABA00E5C69A /* prueba.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A72137FF16A2AABA00E5C69A /* prueba.jpg */; };
+		A7484F5516A3D22B00135238 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7484F5416A3D22B00135238 /* MessageUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +46,22 @@
 		A72137DB16A2967400E5C69A /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		A72137DD16A2967400E5C69A /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A72137E016A2967400E5C69A /* Team_Games.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Team_Games.xcdatamodel; sourceTree = "<group>"; };
+		A72137E716A296A100E5C69A /* MainStoryboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MainStoryboard.storyboard; sourceTree = "<group>"; };
+		A72137EA16A296D000E5C69A /* Personas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Personas.h; sourceTree = "<group>"; };
+		A72137EB16A296D000E5C69A /* Personas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Personas.m; sourceTree = "<group>"; };
+		A72137ED16A296E900E5C69A /* PreguntasClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PreguntasClass.h; sourceTree = "<group>"; };
+		A72137EE16A296E900E5C69A /* PreguntasClass.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PreguntasClass.m; sourceTree = "<group>"; };
+		A72137F116A2970E00E5C69A /* DatosViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatosViewController.h; sourceTree = "<group>"; };
+		A72137F216A2970E00E5C69A /* DatosViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatosViewController.m; sourceTree = "<group>"; };
+		A72137F316A2970E00E5C69A /* GeneroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneroViewController.h; sourceTree = "<group>"; };
+		A72137F416A2970E00E5C69A /* GeneroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneroViewController.m; sourceTree = "<group>"; };
+		A72137F516A2970E00E5C69A /* HorarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorarioViewController.h; sourceTree = "<group>"; };
+		A72137F616A2970E00E5C69A /* HorarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorarioViewController.m; sourceTree = "<group>"; };
+		A72137F716A2970E00E5C69A /* JuegoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuegoViewController.h; sourceTree = "<group>"; };
+		A72137F816A2970E00E5C69A /* JuegoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuegoViewController.m; sourceTree = "<group>"; };
+		A72137FD16A2971900E5C69A /* naipe.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = naipe.jpg; sourceTree = "<group>"; };
+		A72137FF16A2AABA00E5C69A /* prueba.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = prueba.jpg; sourceTree = "<group>"; };
+		A7484F5416A3D22B00135238 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +69,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7484F5516A3D22B00135238 /* MessageUI.framework in Frameworks */,
 				A72137C616A2967400E5C69A /* UIKit.framework in Frameworks */,
 				A72137C816A2967400E5C69A /* Foundation.framework in Frameworks */,
 				A72137CA16A2967400E5C69A /* CoreGraphics.framework in Frameworks */,
@@ -73,6 +100,7 @@
 		A72137C416A2967400E5C69A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7484F5416A3D22B00135238 /* MessageUI.framework */,
 				A72137C516A2967400E5C69A /* UIKit.framework */,
 				A72137C716A2967400E5C69A /* Foundation.framework */,
 				A72137C916A2967400E5C69A /* CoreGraphics.framework */,
@@ -84,9 +112,11 @@
 		A72137CD16A2967400E5C69A /* Team Games */ = {
 			isa = PBXGroup;
 			children = (
+				A72137F016A296EE00E5C69A /* Controller */,
+				A72137E916A296C200E5C69A /* Datos */,
+				A72137E716A296A100E5C69A /* MainStoryboard.storyboard */,
 				A72137D616A2967400E5C69A /* AppDelegate.h */,
 				A72137D716A2967400E5C69A /* AppDelegate.m */,
-				A72137DF16A2967400E5C69A /* Team_Games.xcdatamodeld */,
 				A72137CE16A2967400E5C69A /* Supporting Files */,
 			);
 			path = "Team Games";
@@ -95,6 +125,8 @@
 		A72137CE16A2967400E5C69A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A72137FF16A2AABA00E5C69A /* prueba.jpg */,
+				A72137FD16A2971900E5C69A /* naipe.jpg */,
 				A72137CF16A2967400E5C69A /* Team Games-Info.plist */,
 				A72137D016A2967400E5C69A /* InfoPlist.strings */,
 				A72137D316A2967400E5C69A /* main.m */,
@@ -104,6 +136,33 @@
 				A72137DD16A2967400E5C69A /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A72137E916A296C200E5C69A /* Datos */ = {
+			isa = PBXGroup;
+			children = (
+				A72137ED16A296E900E5C69A /* PreguntasClass.h */,
+				A72137EE16A296E900E5C69A /* PreguntasClass.m */,
+				A72137DF16A2967400E5C69A /* Team_Games.xcdatamodeld */,
+				A72137EA16A296D000E5C69A /* Personas.h */,
+				A72137EB16A296D000E5C69A /* Personas.m */,
+			);
+			name = Datos;
+			sourceTree = "<group>";
+		};
+		A72137F016A296EE00E5C69A /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A72137F116A2970E00E5C69A /* DatosViewController.h */,
+				A72137F216A2970E00E5C69A /* DatosViewController.m */,
+				A72137F316A2970E00E5C69A /* GeneroViewController.h */,
+				A72137F416A2970E00E5C69A /* GeneroViewController.m */,
+				A72137F516A2970E00E5C69A /* HorarioViewController.h */,
+				A72137F616A2970E00E5C69A /* HorarioViewController.m */,
+				A72137F716A2970E00E5C69A /* JuegoViewController.h */,
+				A72137F816A2970E00E5C69A /* JuegoViewController.m */,
+			);
+			name = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -161,6 +220,9 @@
 				A72137DA16A2967400E5C69A /* Default.png in Resources */,
 				A72137DC16A2967400E5C69A /* Default@2x.png in Resources */,
 				A72137DE16A2967400E5C69A /* Default-568h@2x.png in Resources */,
+				A72137E816A296A100E5C69A /* MainStoryboard.storyboard in Resources */,
+				A72137FE16A2971900E5C69A /* naipe.jpg in Resources */,
+				A721380016A2AABA00E5C69A /* prueba.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -174,6 +236,12 @@
 				A72137D416A2967400E5C69A /* main.m in Sources */,
 				A72137D816A2967400E5C69A /* AppDelegate.m in Sources */,
 				A72137E116A2967400E5C69A /* Team_Games.xcdatamodeld in Sources */,
+				A72137EC16A296D000E5C69A /* Personas.m in Sources */,
+				A72137EF16A296E900E5C69A /* PreguntasClass.m in Sources */,
+				A72137F916A2970E00E5C69A /* DatosViewController.m in Sources */,
+				A72137FA16A2970E00E5C69A /* GeneroViewController.m in Sources */,
+				A72137FB16A2970E00E5C69A /* HorarioViewController.m in Sources */,
+				A72137FC16A2970E00E5C69A /* JuegoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +352,7 @@
 				A72137E616A2967400E5C69A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
