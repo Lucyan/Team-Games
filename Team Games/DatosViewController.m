@@ -8,7 +8,7 @@
 
 #import "DatosViewController.h"
 #import "Personas.h"
-#import "JuegoViewController.h"
+#import "RuletaViewController.h"
 
 @interface DatosViewController ()
 
@@ -41,7 +41,7 @@
     if (![self.nombreText.text isEqualToString:@""] && ![self.emailText.text isEqualToString:@""]) {
         [self insertarDatos];
         
-        JuegoViewController *juego = [self.storyboard instantiateViewControllerWithIdentifier:@"juegoID"];
+        RuletaViewController *juego = [self.storyboard instantiateViewControllerWithIdentifier:@"ruletaID"];
         
         [self.navigationController pushViewController:juego animated:YES];
     } else {

@@ -7,10 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MediaPlayer/MediaPlayer.h>
 
-@interface GeneroViewController : UIViewController
+@interface GeneroViewController : UIViewController <UIGestureRecognizerDelegate>
 - (IBAction)btnHombre:(id)sender;
 - (IBAction)btnMujer:(id)sender;
 - (IBAction)btnVolver:(id)sender;
+- (IBAction)btnVideo:(id)sender;
 
 @end

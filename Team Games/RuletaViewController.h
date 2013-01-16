@@ -12,6 +12,7 @@
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna1;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna2;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna3;
+@property (weak, nonatomic) IBOutlet UIImageView *imgFondo;
 - (IBAction)btnIniciar:(id)sender;
 
 @end

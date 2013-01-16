@@ -9,7 +9,10 @@
 #import "GeneroViewController.h"
 #import "PreguntasClass.h"
 
-@interface GeneroViewController ()
+@interface GeneroViewController () {
+    MPMoviePlayerController *moviePlayer;
+    UIImageView *fondoView;
+}
 
 @end
 
@@ -55,6 +58,57 @@
     UINavigationController *datos = [self.storyboard instantiateViewControllerWithIdentifier:@"juegoNCID"];
     
     [self presentViewController:datos animated:YES completion:nil];
+}
+
+- (IBAction)btnVideo:(id)sender {
+    [self video];
+}
+
+-(void)video {
+	
+	NSBundle *bundle = [NSBundle mainBundle];
+	NSString *moviePath = [bundle pathForResource:@"video" ofType:@"m4v"];
+                           
+    NSURL *movieURL;
+    
+    if (moviePath) {
+        movieURL = [NSURL fileURLWithPath:moviePath];
+    }
+    if (movieURL != nil) {
+        moviePlayer = [[MPMoviePlayerController alloc] initWithContentURL:movieURL];
+        
+        [moviePlayer setRepeatMode:MPMovieRepeatModeOne];
+        [moviePlayer setControlStyle:MPMovieControlStyleNone];
+        
+        UIButton *botonStop = [[UIButton alloc] initWithFrame:[[self view] bounds]];
+        [botonStop addTarget:self action:@selector(stopVideo) forControlEvents:UIControlEventTouchUpInside];
+        
+        UIImage *fondo = [UIImage imageNamed:@"fondoVideo.png"];
+        fondoView = [[UIImageView alloc] initWithFrame:[[self view] bounds]];
+        [fondoView setImage:fondo];
+        
+        [[moviePlayer view] setFrame:[[self view] bounds]];
+        [[moviePlayer view] addSubview:fondoView];
+        [[moviePlayer view] addSubview:botonStop];
+        
+        [moviePlayer play];
+        
+        [UIView transitionFromView:self.view toView:moviePlayer.view duration:0.4 options:UIViewAnimationOptionTransitionCrossDissolve completion:^(BOOL finish){
+            if (finish) {
+                [fondoView removeFromSuperview];
+            }
+        }];
+        
+        
+    }
+}
+
+- (void)stopVideo {
+    [UIView transitionFromView:moviePlayer.view toView:self.view duration:0.4 options:UIViewAnimationOptionTransitionCrossDissolve completion:^(BOOL finish){
+        if (finish) {
+            [moviePlayer stop];
+        }
+    }];
 }
 
 @end
