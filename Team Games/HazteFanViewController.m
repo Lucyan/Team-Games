@@ -1,20 +1,18 @@
 //
-//  VistaPruebaViewController.m
+//  HazteFanViewController.m
 //  Team Games
 //
 //  Created by Leonardo on 16-01-13.
 //  Copyright (c) 2013 devTrash. All rights reserved.
 //
 
-#import "VistaPruebaViewController.h"
-#import "PreguntasClass.h"
 #import "HazteFanViewController.h"
 
-@interface VistaPruebaViewController ()
+@interface HazteFanViewController ()
 
 @end
 
-@implementation VistaPruebaViewController
+@implementation HazteFanViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -30,8 +28,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
-    [self iniciaBotonSonido];
-    [self cargarDatos];
+    [self iniciaSonido];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,30 +37,18 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void) cargarDatos {
-    [self.txtTitulo setFont:[UIFont fontWithName:@"QType Pro" size:45.0]];
-    [self.txtSubtitulo setFont:[UIFont fontWithName:@"QType Pro" size:27.0]];
-    [self.txtDescripcion setFont:[UIFont fontWithName:@"QType Pro" size:25.0]];
-    
-    [self.txtSubtitulo setTextColor:[UIColor colorWithRed:0.812 green:0.706 blue:0.286 alpha:1]];
-    
-    [self.imgPrueba setImage:[UIImage imageNamed:[self.prueba objectForKey:@"imagen"]]];
-    [self.txtTitulo setText:[self.prueba objectForKey:@"titulo"]];
-    [self.txtSubtitulo setText:[self.prueba objectForKey:@"subtitulo"]];
-    [self.txtDescripcion setText:[self.prueba objectForKey:@"descripcion"]];
-    //[self.txtDescripcion sizeToFit];
+- (void)viewDidUnload {
+    [super viewDidUnload];
 }
-
 - (IBAction)btnCerrar:(id)sender {
     [sonidoBoton play];
-    HazteFanViewController *fan = [self.storyboard instantiateViewControllerWithIdentifier:@"fanID"];
-    
-    [self.navigationController pushViewController:fan animated:YES];
+    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
 }
 
 
-
-- (void)iniciaBotonSonido {
+- (void)iniciaSonido {
+    
+    // Inicia Sonido Boton
     NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
                                          pathForResource:@"click"
                                          ofType:@"m4a"]];
@@ -88,5 +73,4 @@
     return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
     
 }
-
 @end

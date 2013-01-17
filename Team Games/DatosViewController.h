@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface DatosViewController : UIViewController
+@interface DatosViewController : UIViewController <AVAudioPlayerDelegate> {
+    AVAudioPlayer *sonidoBoton;
+}
 @property (weak, nonatomic) IBOutlet UITextField *nombreText;
 @property (weak, nonatomic) IBOutlet UITextField *emailText;
 

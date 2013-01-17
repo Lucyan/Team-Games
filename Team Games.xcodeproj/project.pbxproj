@@ -28,7 +28,6 @@
 		A72137F916A2970E00E5C69A /* DatosViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F216A2970E00E5C69A /* DatosViewController.m */; };
 		A72137FA16A2970E00E5C69A /* GeneroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F416A2970E00E5C69A /* GeneroViewController.m */; };
 		A72137FB16A2970E00E5C69A /* HorarioViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F616A2970E00E5C69A /* HorarioViewController.m */; };
-		A72137FC16A2970E00E5C69A /* JuegoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A72137F816A2970E00E5C69A /* JuegoViewController.m */; };
 		A7484F5516A3D22B00135238 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7484F5416A3D22B00135238 /* MessageUI.framework */; };
 		A7594FBF16A62B9E000ACEA5 /* fondo.png in Resources */ = {isa = PBXBuildFile; fileRef = A7594FBE16A62B9E000ACEA5 /* fondo.png */; };
 		A7594FC316A62C57000ACEA5 /* dia.png in Resources */ = {isa = PBXBuildFile; fileRef = A7594FC116A62C57000ACEA5 /* dia.png */; };
@@ -57,6 +56,20 @@
 		A778D0A616A504CE000EC185 /* prueba2.png in Resources */ = {isa = PBXBuildFile; fileRef = A778D0A216A504CE000EC185 /* prueba2.png */; };
 		A778D0A716A504CE000EC185 /* prueba3.png in Resources */ = {isa = PBXBuildFile; fileRef = A778D0A316A504CE000EC185 /* prueba3.png */; };
 		A778D0A816A504CE000EC185 /* tapaTorno.png in Resources */ = {isa = PBXBuildFile; fileRef = A778D0A416A504CE000EC185 /* tapaTorno.png */; };
+		A7FFCCA116A79226003B6499 /* hazteFan.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCA016A79226003B6499 /* hazteFan.png */; };
+		A7FFCCA516A7931A003B6499 /* HazteFanViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A7FFCCA416A7931A003B6499 /* HazteFanViewController.m */; };
+		A7FFCCA816A7960C003B6499 /* btnSeguir.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCA616A7960C003B6499 /* btnSeguir.png */; };
+		A7FFCCA916A7960C003B6499 /* logoBacardi.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCA716A7960C003B6499 /* logoBacardi.png */; };
+		A7FFCCAC16A799D8003B6499 /* Icon-72.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCAA16A799D8003B6499 /* Icon-72.png */; };
+		A7FFCCAD16A799D8003B6499 /* Icon-72@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCAB16A799D8003B6499 /* Icon-72@2x.png */; };
+		A7FFCCB216A79AF9003B6499 /* Default-Landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCAE16A79AF9003B6499 /* Default-Landscape.png */; };
+		A7FFCCB316A79AF9003B6499 /* Default-Landscape@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCAF16A79AF9003B6499 /* Default-Landscape@2x.png */; };
+		A7FFCCB416A79AF9003B6499 /* Default-Portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCB016A79AF9003B6499 /* Default-Portrait.png */; };
+		A7FFCCB516A79AF9003B6499 /* Default-Portrait@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCB116A79AF9003B6499 /* Default-Portrait@2x.png */; };
+		A7FFCCD116A7B062003B6499 /* click.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCD016A7B062003B6499 /* click.m4a */; };
+		A7FFCCD316A7B12A003B6499 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7FFCCD216A7B12A003B6499 /* AVFoundation.framework */; };
+		A7FFCCD516A7B751003B6499 /* torno.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCD416A7B751003B6499 /* torno.m4a */; };
+		A7FFCCDB16A7C1A6003B6499 /* tornofinal.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A7FFCCDA16A7C1A6003B6499 /* tornofinal.m4a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,8 +103,6 @@
 		A72137F416A2970E00E5C69A /* GeneroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneroViewController.m; sourceTree = "<group>"; };
 		A72137F516A2970E00E5C69A /* HorarioViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HorarioViewController.h; sourceTree = "<group>"; };
 		A72137F616A2970E00E5C69A /* HorarioViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HorarioViewController.m; sourceTree = "<group>"; };
-		A72137F716A2970E00E5C69A /* JuegoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JuegoViewController.h; sourceTree = "<group>"; };
-		A72137F816A2970E00E5C69A /* JuegoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JuegoViewController.m; sourceTree = "<group>"; };
 		A7484F5416A3D22B00135238 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		A7594FBE16A62B9E000ACEA5 /* fondo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = fondo.png; sourceTree = "<group>"; };
 		A7594FC116A62C57000ACEA5 /* dia.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dia.png; sourceTree = "<group>"; };
@@ -123,6 +134,21 @@
 		A778D0A216A504CE000EC185 /* prueba2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prueba2.png; sourceTree = "<group>"; };
 		A778D0A316A504CE000EC185 /* prueba3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = prueba3.png; sourceTree = "<group>"; };
 		A778D0A416A504CE000EC185 /* tapaTorno.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tapaTorno.png; sourceTree = "<group>"; };
+		A7FFCCA016A79226003B6499 /* hazteFan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hazteFan.png; sourceTree = "<group>"; };
+		A7FFCCA316A7931A003B6499 /* HazteFanViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HazteFanViewController.h; sourceTree = "<group>"; };
+		A7FFCCA416A7931A003B6499 /* HazteFanViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HazteFanViewController.m; sourceTree = "<group>"; };
+		A7FFCCA616A7960C003B6499 /* btnSeguir.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = btnSeguir.png; sourceTree = "<group>"; };
+		A7FFCCA716A7960C003B6499 /* logoBacardi.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logoBacardi.png; sourceTree = "<group>"; };
+		A7FFCCAA16A799D8003B6499 /* Icon-72.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72.png"; sourceTree = "<group>"; };
+		A7FFCCAB16A799D8003B6499 /* Icon-72@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-72@2x.png"; sourceTree = "<group>"; };
+		A7FFCCAE16A79AF9003B6499 /* Default-Landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape.png"; sourceTree = "<group>"; };
+		A7FFCCAF16A79AF9003B6499 /* Default-Landscape@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Landscape@2x.png"; sourceTree = "<group>"; };
+		A7FFCCB016A79AF9003B6499 /* Default-Portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait.png"; sourceTree = "<group>"; };
+		A7FFCCB116A79AF9003B6499 /* Default-Portrait@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-Portrait@2x.png"; sourceTree = "<group>"; };
+		A7FFCCD016A7B062003B6499 /* click.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = click.m4a; sourceTree = "<group>"; };
+		A7FFCCD216A7B12A003B6499 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A7FFCCD416A7B751003B6499 /* torno.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = torno.m4a; sourceTree = "<group>"; };
+		A7FFCCDA16A7C1A6003B6499 /* tornofinal.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = tornofinal.m4a; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +156,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A7FFCCD316A7B12A003B6499 /* AVFoundation.framework in Frameworks */,
 				A70E5A6B16A6762700481B15 /* MediaPlayer.framework in Frameworks */,
 				A7484F5516A3D22B00135238 /* MessageUI.framework in Frameworks */,
 				A72137C616A2967400E5C69A /* UIKit.framework in Frameworks */,
@@ -162,6 +189,7 @@
 		A72137C416A2967400E5C69A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				A7FFCCD216A7B12A003B6499 /* AVFoundation.framework */,
 				A70E5A6A16A6762700481B15 /* MediaPlayer.framework */,
 				A7484F5416A3D22B00135238 /* MessageUI.framework */,
 				A72137C516A2967400E5C69A /* UIKit.framework */,
@@ -190,6 +218,12 @@
 		A72137CE16A2967400E5C69A /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A7FFCCAE16A79AF9003B6499 /* Default-Landscape.png */,
+				A7FFCCAF16A79AF9003B6499 /* Default-Landscape@2x.png */,
+				A7FFCCB016A79AF9003B6499 /* Default-Portrait.png */,
+				A7FFCCB116A79AF9003B6499 /* Default-Portrait@2x.png */,
+				A7FFCCAA16A799D8003B6499 /* Icon-72.png */,
+				A7FFCCAB16A799D8003B6499 /* Icon-72@2x.png */,
 				A72137CF16A2967400E5C69A /* Team Games-Info.plist */,
 				A72137D016A2967400E5C69A /* InfoPlist.strings */,
 				A72137D316A2967400E5C69A /* main.m */,
@@ -222,12 +256,12 @@
 				A72137F416A2970E00E5C69A /* GeneroViewController.m */,
 				A72137F516A2970E00E5C69A /* HorarioViewController.h */,
 				A72137F616A2970E00E5C69A /* HorarioViewController.m */,
-				A72137F716A2970E00E5C69A /* JuegoViewController.h */,
-				A72137F816A2970E00E5C69A /* JuegoViewController.m */,
 				A778D09C16A5044C000EC185 /* RuletaViewController.h */,
 				A778D09D16A5044C000EC185 /* RuletaViewController.m */,
 				A7594FF216A6661A000ACEA5 /* VistaPruebaViewController.h */,
 				A7594FF316A6661A000ACEA5 /* VistaPruebaViewController.m */,
+				A7FFCCA316A7931A003B6499 /* HazteFanViewController.h */,
+				A7FFCCA416A7931A003B6499 /* HazteFanViewController.m */,
 			);
 			name = Controller;
 			sourceTree = "<group>";
@@ -258,6 +292,12 @@
 		A778D0A016A50455000EC185 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				A7FFCCDA16A7C1A6003B6499 /* tornofinal.m4a */,
+				A7FFCCD416A7B751003B6499 /* torno.m4a */,
+				A7FFCCD016A7B062003B6499 /* click.m4a */,
+				A7FFCCA616A7960C003B6499 /* btnSeguir.png */,
+				A7FFCCA716A7960C003B6499 /* logoBacardi.png */,
+				A7FFCCA016A79226003B6499 /* hazteFan.png */,
 				A70E5A7016A687C600481B15 /* fondoVideo.png */,
 				A70E5A6E16A67FE600481B15 /* video.png */,
 				A70E5A6C16A678C200481B15 /* video.m4v */,
@@ -366,6 +406,18 @@
 				A70E5A6D16A678C200481B15 /* video.m4v in Resources */,
 				A70E5A6F16A67FE600481B15 /* video.png in Resources */,
 				A70E5A7116A687C600481B15 /* fondoVideo.png in Resources */,
+				A7FFCCA116A79226003B6499 /* hazteFan.png in Resources */,
+				A7FFCCA816A7960C003B6499 /* btnSeguir.png in Resources */,
+				A7FFCCA916A7960C003B6499 /* logoBacardi.png in Resources */,
+				A7FFCCAC16A799D8003B6499 /* Icon-72.png in Resources */,
+				A7FFCCAD16A799D8003B6499 /* Icon-72@2x.png in Resources */,
+				A7FFCCB216A79AF9003B6499 /* Default-Landscape.png in Resources */,
+				A7FFCCB316A79AF9003B6499 /* Default-Landscape@2x.png in Resources */,
+				A7FFCCB416A79AF9003B6499 /* Default-Portrait.png in Resources */,
+				A7FFCCB516A79AF9003B6499 /* Default-Portrait@2x.png in Resources */,
+				A7FFCCD116A7B062003B6499 /* click.m4a in Resources */,
+				A7FFCCD516A7B751003B6499 /* torno.m4a in Resources */,
+				A7FFCCDB16A7C1A6003B6499 /* tornofinal.m4a in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -384,10 +436,10 @@
 				A72137F916A2970E00E5C69A /* DatosViewController.m in Sources */,
 				A72137FA16A2970E00E5C69A /* GeneroViewController.m in Sources */,
 				A72137FB16A2970E00E5C69A /* HorarioViewController.m in Sources */,
-				A72137FC16A2970E00E5C69A /* JuegoViewController.m in Sources */,
 				A778D09E16A5044C000EC185 /* RuletaViewController.m in Sources */,
 				A7594FD616A638AA000ACEA5 /* CustomUITextField.m in Sources */,
 				A7594FF416A6661A000ACEA5 /* VistaPruebaViewController.m in Sources */,
+				A7FFCCA516A7931A003B6499 /* HazteFanViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

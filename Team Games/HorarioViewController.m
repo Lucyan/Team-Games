@@ -30,6 +30,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self iniciaBotonSonido];
 }
 
 - (void)didReceiveMemoryWarning
@@ -39,14 +41,17 @@
 }
 
 - (IBAction)btnDia:(id)sender {
+    [sonidoBoton play];
     [self siguiente:@"dia"];
 }
 
 - (IBAction)btnNoche:(id)sender {
+    [sonidoBoton play];
     [self siguiente:@"noche"];
 }
 
 - (IBAction)btnEnviar:(id)sender {
+    [sonidoBoton play];
     AppDelegate *appDelegate = [[UIApplication sharedApplication] delegate];
     
     NSManagedObjectContext *context = [appDelegate managedObjectContext];
@@ -132,5 +137,32 @@
     GeneroViewController *genero = [self.storyboard instantiateViewControllerWithIdentifier:@"generoID"];
     
     [self.navigationController pushViewController:genero animated:YES];
+}
+
+- (void)iniciaBotonSonido {
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"click"
+                                         ofType:@"m4a"]];
+    
+    NSError *error;
+    sonidoBoton = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoBoton.delegate = self;
+        [sonidoBoton prepareToPlay];
+    }
+}
+
+
+// Fix Landscape mode en iOS 5
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+    
 }
 @end

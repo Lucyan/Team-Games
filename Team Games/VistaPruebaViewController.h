@@ -7,8 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface VistaPruebaViewController : UIViewController
+@interface VistaPruebaViewController : UIViewController <AVAudioPlayerDelegate> {
+    AVAudioPlayer *sonidoBoton;
+}
 @property (weak, nonatomic) IBOutlet UILabel *txtTitulo;
 @property (weak, nonatomic) IBOutlet UILabel *txtSubtitulo;
 @property (weak, nonatomic) IBOutlet UILabel *txtDescripcion;

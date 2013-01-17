@@ -36,6 +36,8 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    [self iniciaSonido];
+    
     PreguntasClass *pruebasDatos = [PreguntasClass getInstance];
     pruebas = (NSArray *) [[pruebasDatos.datos objectForKey:pruebasDatos.horario] objectForKey:pruebasDatos.genero];
     
@@ -103,7 +105,11 @@
             
             if (vueltas > 0) {
                 [self moverRuleta:coleccionImagenes conVueltas:vueltas-1 iniciarEn:numTorno numeroDeTorno:numeroTorno];
+                if (vueltas == 1) {
+                    [sonidoFinTorno play];
+                }
             } else if (numeroTorno == 3) {
+                [sonidoTorno stop];
                 [self performSelector:@selector(muestraPrueba) withObject:nil afterDelay:1.0];
             }
         }
@@ -128,12 +134,80 @@
 }
 
 - (IBAction)btnIniciar:(id)sender {
+    //[sonidoBoton play];
     UIButton *boton = (UIButton *) sender;
     [boton setEnabled:NO];
     
+    [sonidoTorno play];
     [self moverRuleta:self.imgColumna1 conVueltas:20 iniciarEn:numTorno1 numeroDeTorno:1];
     [self performSelector:@selector(torno2) withObject:nil afterDelay:0.4];
     [self performSelector:@selector(torno3) withObject:nil afterDelay:0.8];
+}
+
+
+- (void)iniciaSonido {
+    
+    // Inicia Sonido Boton
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"click"
+                                         ofType:@"m4a"]];
+    
+    NSError *error;
+    sonidoBoton = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoBoton.delegate = self;
+        [sonidoBoton prepareToPlay];
+    }
+    
+    
+    // Inicia Sonido Torno
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                  pathForResource:@"torno"
+                                  ofType:@"m4a"]];
+    
+    sonidoTorno = [[AVAudioPlayer alloc]
+                    initWithContentsOfURL:url
+                    error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoTorno.delegate = self;
+        sonidoTorno.volume = 0.5;
+        sonidoTorno.numberOfLoops = -1;
+        [sonidoTorno prepareToPlay];
+    }
+    
+    // Inicia Sonido Fin Torno
+    url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                  pathForResource:@"tornofinal"
+                                  ofType:@"m4a"]];
+    
+    sonidoFinTorno = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoFinTorno.delegate = self;
+        [sonidoFinTorno prepareToPlay];
+    }
+}
+
+// Fix Landscape mode en iOS 5
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+    
 }
 
 @end

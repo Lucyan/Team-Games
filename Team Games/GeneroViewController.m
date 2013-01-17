@@ -31,6 +31,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    
+    [self iniciaBotonSonido];
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,14 +42,17 @@
 }
 
 - (IBAction)btnHombre:(id)sender {
+    [sonidoBoton play];
     [self siguiente:@"hombre"];
 }
 
 - (IBAction)btnMujer:(id)sender {
+    [sonidoBoton play];
     [self siguiente:@"mujer"];
 }
 
 - (IBAction)btnVolver:(id)sender {
+    [sonidoBoton play];
     [self.navigationController popViewControllerAnimated:YES];
 }
 
@@ -109,6 +114,32 @@
             [moviePlayer stop];
         }
     }];
+}
+
+- (void)iniciaBotonSonido {
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"click"
+                                         ofType:@"m4a"]];
+    
+    NSError *error;
+    sonidoBoton = [[AVAudioPlayer alloc]
+                   initWithContentsOfURL:url
+                   error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoBoton.delegate = self;
+        [sonidoBoton prepareToPlay];
+    }
+}
+
+// Fix Landscape mode en iOS 5
+-(BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)toInterfaceOrientation {
+    
+    return UIInterfaceOrientationIsLandscape(toInterfaceOrientation);
+    
 }
 
 @end

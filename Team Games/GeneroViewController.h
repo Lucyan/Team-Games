@@ -8,8 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <MediaPlayer/MediaPlayer.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface GeneroViewController : UIViewController <UIGestureRecognizerDelegate>
+@interface GeneroViewController : UIViewController <UIGestureRecognizerDelegate, AVAudioPlayerDelegate> {
+    AVAudioPlayer *sonidoBoton;
+}
 - (IBAction)btnHombre:(id)sender;
 - (IBAction)btnMujer:(id)sender;
 - (IBAction)btnVolver:(id)sender;

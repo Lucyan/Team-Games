@@ -7,8 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
-@interface RuletaViewController : UIViewController
+@interface RuletaViewController : UIViewController <AVAudioPlayerDelegate> {
+    AVAudioPlayer *sonidoBoton;
+    AVAudioPlayer *sonidoTorno;
+    AVAudioPlayer *sonidoFinTorno;
+}
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna1;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna2;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna3;

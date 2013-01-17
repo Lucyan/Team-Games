@@ -9,8 +9,11 @@
 #import <UIKit/UIKit.h>
 #import <MessageUI/MessageUI.h>
 #import "AppDelegate.h"
+#import <AVFoundation/AVFoundation.h>
 
-@interface HorarioViewController : UIViewController <MFMailComposeViewControllerDelegate>
+@interface HorarioViewController : UIViewController <MFMailComposeViewControllerDelegate, AVAudioPlayerDelegate> {
+    AVAudioPlayer *sonidoBoton;
+}
 - (IBAction)btnDia:(id)sender;
 - (IBAction)btnNoche:(id)sender;
 - (IBAction)btnEnviar:(id)sender;
