@@ -8,6 +8,7 @@
 
 #import "GeneroViewController.h"
 #import "PreguntasClass.h"
+#import "HazteFanViewController.h"
 
 @interface GeneroViewController () {
     MPMoviePlayerController *moviePlayer;
@@ -67,6 +68,16 @@
 
 - (IBAction)btnVideo:(id)sender {
     [self video];
+}
+
+- (IBAction)btnHazteFan:(id)sender {
+    [sonidoBoton play];
+    
+    HazteFanViewController *hazteFan = [self.storyboard instantiateViewControllerWithIdentifier:@"fanID"];
+    
+    [hazteFan setVista:@"inicio"];
+    
+    [self presentViewController:hazteFan animated:YES completion:nil];
 }
 
 -(void)video {
@@ -131,6 +142,7 @@
               [error localizedDescription]);
     } else {
         sonidoBoton.delegate = self;
+        sonidoBoton.volume = 0.3;
         [sonidoBoton prepareToPlay];
     }
 }

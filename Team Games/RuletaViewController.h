@@ -13,6 +13,7 @@
     AVAudioPlayer *sonidoBoton;
     AVAudioPlayer *sonidoTorno;
     AVAudioPlayer *sonidoFinTorno;
+    AVAudioPlayer *sonidoFinTorno2;
 }
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna1;
 @property (strong, nonatomic) IBOutletCollection(UIImageView) NSArray *imgColumna2;

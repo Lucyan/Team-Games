@@ -31,7 +31,35 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
     
+    // Inicia Sonido Boton
+    NSURL *url = [NSURL fileURLWithPath:[[NSBundle mainBundle]
+                                         pathForResource:@"primero"
+                                         ofType:@"m4a"]];
+    
+    NSError *error;
+    sonidoInicio = [[AVAudioPlayer alloc]
+                                   initWithContentsOfURL:url
+                                   error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoInicio.delegate = self;
+        sonidoInicio.volume = 0.5;
+        [sonidoInicio prepareToPlay];
+    }
+    
+    inicio = 0;
+    
     [self iniciaBotonSonido];
+}
+
+- (void)viewDidAppear:(BOOL)animated {
+    if (inicio == 0) {
+        [sonidoInicio play];
+        inicio = 1;
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -154,6 +182,7 @@
               [error localizedDescription]);
     } else {
         sonidoBoton.delegate = self;
+        sonidoBoton.volume = 0.3;
         [sonidoBoton prepareToPlay];
     }
 }

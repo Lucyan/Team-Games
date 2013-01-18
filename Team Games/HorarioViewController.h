@@ -13,6 +13,8 @@
 
 @interface HorarioViewController : UIViewController <MFMailComposeViewControllerDelegate, AVAudioPlayerDelegate> {
     AVAudioPlayer *sonidoBoton;
+    AVAudioPlayer *sonidoInicio;
+    int inicio;
 }
 - (IBAction)btnDia:(id)sender;
 - (IBAction)btnNoche:(id)sender;

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A709179916A8D6EE00F40956 /* primero.m4a in Resources */ = {isa = PBXBuildFile; fileRef = A709179816A8D6EE00F40956 /* primero.m4a */; };
+		A709179C16A8DCA200F40956 /* botonhaztefan.png in Resources */ = {isa = PBXBuildFile; fileRef = A709179B16A8DCA200F40956 /* botonhaztefan.png */; };
 		A70E5A6B16A6762700481B15 /* MediaPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A70E5A6A16A6762700481B15 /* MediaPlayer.framework */; };
 		A70E5A6D16A678C200481B15 /* video.m4v in Resources */ = {isa = PBXBuildFile; fileRef = A70E5A6C16A678C200481B15 /* video.m4v */; };
 		A70E5A6F16A67FE600481B15 /* video.png in Resources */ = {isa = PBXBuildFile; fileRef = A70E5A6E16A67FE600481B15 /* video.png */; };
@@ -73,6 +75,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A709179816A8D6EE00F40956 /* primero.m4a */ = {isa = PBXFileReference; lastKnownFileType = file; path = primero.m4a; sourceTree = "<group>"; };
+		A709179B16A8DCA200F40956 /* botonhaztefan.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = botonhaztefan.png; sourceTree = "<group>"; };
 		A70E5A6A16A6762700481B15 /* MediaPlayer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MediaPlayer.framework; path = System/Library/Frameworks/MediaPlayer.framework; sourceTree = SDKROOT; };
 		A70E5A6C16A678C200481B15 /* video.m4v */ = {isa = PBXFileReference; lastKnownFileType = file; path = video.m4v; sourceTree = "<group>"; };
 		A70E5A6E16A67FE600481B15 /* video.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = video.png; sourceTree = "<group>"; };
@@ -292,6 +296,8 @@
 		A778D0A016A50455000EC185 /* Recursos */ = {
 			isa = PBXGroup;
 			children = (
+				A709179B16A8DCA200F40956 /* botonhaztefan.png */,
+				A709179816A8D6EE00F40956 /* primero.m4a */,
 				A7FFCCDA16A7C1A6003B6499 /* tornofinal.m4a */,
 				A7FFCCD416A7B751003B6499 /* torno.m4a */,
 				A7FFCCD016A7B062003B6499 /* click.m4a */,
@@ -418,6 +424,8 @@
 				A7FFCCD116A7B062003B6499 /* click.m4a in Resources */,
 				A7FFCCD516A7B751003B6499 /* torno.m4a in Resources */,
 				A7FFCCDB16A7C1A6003B6499 /* tornofinal.m4a in Resources */,
+				A709179916A8D6EE00F40956 /* primero.m4a in Resources */,
+				A709179C16A8DCA200F40956 /* botonhaztefan.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

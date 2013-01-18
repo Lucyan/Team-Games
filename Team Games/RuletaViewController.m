@@ -77,7 +77,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (void)moverRuleta:(NSArray *) coleccionImagenes conVueltas:(int) vueltas iniciarEn:(int) iniTorno numeroDeTorno:(int) numeroTorno {
+- (void)moverRuleta:(NSArray *) coleccionImagenes conVueltas:(int) vueltas iniciarEn:(int) iniTorno numeroDeTorno:(int) numeroTorno conSonido:(AVAudioPlayer *) finTorno {
     [UIView animateWithDuration:0.11 animations:^{
         for (UIImageView *imagen in coleccionImagenes) {
             [imagen setFrame:CGRectMake(imagen.frame.origin.x, imagen.frame.origin.y+200, imagen.frame.size.width, imagen.frame.size.height)];
@@ -104,9 +104,9 @@
             }
             
             if (vueltas > 0) {
-                [self moverRuleta:coleccionImagenes conVueltas:vueltas-1 iniciarEn:numTorno numeroDeTorno:numeroTorno];
+                [self moverRuleta:coleccionImagenes conVueltas:vueltas-1 iniciarEn:numTorno numeroDeTorno:numeroTorno conSonido:finTorno];
                 if (vueltas == 1) {
-                    [sonidoFinTorno play];
+                    [finTorno play];
                 }
             } else if (numeroTorno == 3) {
                 [sonidoTorno stop];
@@ -126,11 +126,11 @@
 }
 
 - (void)torno2 {
-    [self moverRuleta:self.imgColumna2 conVueltas:20 iniciarEn:numTorno2 numeroDeTorno:2];
+    [self moverRuleta:self.imgColumna2 conVueltas:20 iniciarEn:numTorno2 numeroDeTorno:2 conSonido:sonidoFinTorno2];
 }
 
 - (void)torno3 {
-    [self moverRuleta:self.imgColumna3 conVueltas:20 iniciarEn:numTorno3 numeroDeTorno:3];
+    [self moverRuleta:self.imgColumna3 conVueltas:20 iniciarEn:numTorno3 numeroDeTorno:3 conSonido:sonidoFinTorno];
 }
 
 - (IBAction)btnIniciar:(id)sender {
@@ -139,7 +139,7 @@
     [boton setEnabled:NO];
     
     [sonidoTorno play];
-    [self moverRuleta:self.imgColumna1 conVueltas:20 iniciarEn:numTorno1 numeroDeTorno:1];
+    [self moverRuleta:self.imgColumna1 conVueltas:20 iniciarEn:numTorno1 numeroDeTorno:1 conSonido:sonidoFinTorno];
     [self performSelector:@selector(torno2) withObject:nil afterDelay:0.4];
     [self performSelector:@selector(torno3) withObject:nil afterDelay:0.8];
 }
@@ -162,6 +162,7 @@
               [error localizedDescription]);
     } else {
         sonidoBoton.delegate = self;
+        sonidoBoton.volume = 0.3;
         [sonidoBoton prepareToPlay];
     }
     
@@ -180,7 +181,7 @@
               [error localizedDescription]);
     } else {
         sonidoTorno.delegate = self;
-        sonidoTorno.volume = 0.5;
+        sonidoTorno.volume = 0.2;
         sonidoTorno.numberOfLoops = -1;
         [sonidoTorno prepareToPlay];
     }
@@ -200,6 +201,18 @@
     } else {
         sonidoFinTorno.delegate = self;
         [sonidoFinTorno prepareToPlay];
+    }
+    
+    sonidoFinTorno2 = [[AVAudioPlayer alloc]
+                      initWithContentsOfURL:url
+                      error:&error];
+    if (error)
+    {
+        NSLog(@"Error in audioPlayer: %@",
+              [error localizedDescription]);
+    } else {
+        sonidoFinTorno2.delegate = self;
+        [sonidoFinTorno2 prepareToPlay];
     }
 }
 

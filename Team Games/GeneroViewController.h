@@ -17,5 +17,6 @@
 - (IBAction)btnMujer:(id)sender;
 - (IBAction)btnVolver:(id)sender;
 - (IBAction)btnVideo:(id)sender;
+- (IBAction)btnHazteFan:(id)sender;
 
 @end

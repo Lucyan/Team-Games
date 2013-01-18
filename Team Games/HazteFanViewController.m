@@ -42,7 +42,11 @@
 }
 - (IBAction)btnCerrar:(id)sender {
     [sonidoBoton play];
-    [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    if ([self.vista isEqualToString:@"inicio"]) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    } else {
+        [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+    }
 }
 
 
@@ -63,6 +67,7 @@
               [error localizedDescription]);
     } else {
         sonidoBoton.delegate = self;
+        sonidoBoton.volume = 0.3;
         [sonidoBoton prepareToPlay];
     }
 }

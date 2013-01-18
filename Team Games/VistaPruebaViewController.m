@@ -78,6 +78,7 @@
               [error localizedDescription]);
     } else {
         sonidoBoton.delegate = self;
+        sonidoBoton.volume = 0.3;
         [sonidoBoton prepareToPlay];
     }
 }

@@ -12,6 +12,7 @@
 @interface HazteFanViewController : UIViewController <AVAudioPlayerDelegate> {
     AVAudioPlayer *sonidoBoton;
 }
+@property (nonatomic, retain) NSString *vista;
 - (IBAction)btnCerrar:(id)sender;
 
 @end

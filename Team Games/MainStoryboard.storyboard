@@ -160,6 +160,20 @@
                                     <action selector="btnVolver:" destination="uje-Vj-Ro4" eventType="touchUpInside" id="E6A-om-yfK"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Uds-J0-9mT">
+                                <rect key="frame" x="146" y="713" width="118" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Seleccionar Horario" image="botonhaztefan.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="btnHazteFan:" destination="uje-Vj-Ro4" eventType="touchUpInside" id="J9U-bk-Fgm"/>
+                                </connections>
+                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="mlV-58-lDl">
                                 <rect key="frame" x="758" y="668" width="233" height="66"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -427,6 +441,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="botonhaztefan.png" width="235" height="72"/>
         <image name="btnSeguir.png" width="235" height="72"/>
         <image name="cerrar.png" width="235" height="72"/>
         <image name="coro.png" width="404" height="404"/>
@@ -447,63 +462,6 @@
         <image name="seguir.png" width="180" height="72"/>
         <image name="volver.png" width="235" height="72"/>
     </resources>
-    <classes>
-        <class className="CustomUITextField" superclassName="UITextField">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/CustomUITextField.h"/>
-        </class>
-        <class className="DatosViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/DatosViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnSeguir:"/>
-                <relationship kind="action" name="btnVolver:"/>
-                <relationship kind="outlet" name="emailText" candidateClass="UITextField"/>
-                <relationship kind="outlet" name="nombreText" candidateClass="UITextField"/>
-            </relationships>
-        </class>
-        <class className="GeneroViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/GeneroViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnHombre:"/>
-                <relationship kind="action" name="btnMujer:"/>
-                <relationship kind="action" name="btnVideo:"/>
-                <relationship kind="action" name="btnVolver:"/>
-            </relationships>
-        </class>
-        <class className="HazteFanViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HazteFanViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnCerrar:"/>
-            </relationships>
-        </class>
-        <class className="HorarioViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/HorarioViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnDia:"/>
-                <relationship kind="action" name="btnEnviar:"/>
-                <relationship kind="action" name="btnNoche:"/>
-            </relationships>
-        </class>
-        <class className="RuletaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/RuletaViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnIniciar:"/>
-                <relationship kind="outlet" name="imgFondo" candidateClass="UIImageView"/>
-                <relationship kind="outletCollection" name="imgColumna1" candidateClass="UIImageView"/>
-                <relationship kind="outletCollection" name="imgColumna2" candidateClass="UIImageView"/>
-                <relationship kind="outletCollection" name="imgColumna3" candidateClass="UIImageView"/>
-            </relationships>
-        </class>
-        <class className="VistaPruebaViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/VistaPruebaViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="btnCerrar:"/>
-                <relationship kind="outlet" name="imgPrueba" candidateClass="UIImageView"/>
-                <relationship kind="outlet" name="txtDescripcion" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="txtSubtitulo" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="txtTitulo" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
